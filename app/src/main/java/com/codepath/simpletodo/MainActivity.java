@@ -103,11 +103,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void onAddItem(View view) {
         String newItem = etEditText.getText().toString();
-        if (checkDuplicateItem(newItem) == false) {
-            aTodoAdapter.add(newItem);
-            writeItems();
-        }
         etEditText.setText("");
+        if (checkDuplicateItem(newItem) == true) {return;}
+
+        if (newItem.isEmpty()){return;}
+        aTodoAdapter.add(newItem);
+        writeItems();
     }
 
     public boolean checkDuplicateItem(String newItem){

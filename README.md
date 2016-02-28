@@ -25,7 +25,8 @@ The following **optional** features are implemented:
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [x] User can NOT add duplicated tasks
+* [x] User can NOT add null task (empty string)
 
 ## Video Walkthrough 
 
@@ -37,8 +38,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
-
+---
 ## License
 
     Copyright 2016-2020 Tran Duy Thanh
